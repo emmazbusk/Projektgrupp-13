@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.98 152.7">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 1em;
+      }
+
+      .cls-2 {
+        letter-spacing: 1em;
+      }
+
+      .cls-3 {
+        letter-spacing: .99em;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 6.8px;
+      }
+
+      .cls-5 {
+        font-size: 87.64px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: ITCAvantGardePro-Bk, 'ITC Avant Garde Gothic Pro';
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        font-size: 19.32px;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-7 {
+        font-family: SourceSansRoman-Regular, 'Source Sans Variable';
+        font-size: 47.83px;
+        font-variation-settings: 'wght' 400;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-4" cx="158.05" cy="45.82" rx="31.32" ry="30.67"/>
+  <text class="cls-5" transform="translate(194.88 76.25) scale(1.05 1)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-7" transform="translate(120.83 124.34) scale(1.04 1)"><tspan class="cls-9" x="0" y="0">C</tspan><tspan x="25.92" y="0">OPI</tspan><tspan class="cls-8" x="97.33" y="0">A</tspan></text>
+  <line class="cls-4" x1="4.71" y1="11.71" x2="4.71" y2="127.45"/>
+  <line class="cls-4" x1="109.32" y1="11.71" x2="109.32" y2="127.45"/>
+  <line class="cls-4" x1="5.62" y1="14.02" x2="108.47" y2="125.09"/>
+  <text class="cls-6" transform="translate(0 148.26) scale(1.19 1)"><tspan class="cls-2" x="0" y="0">pictu</tspan><tspan class="cls-3" x="144.46" y="0">r</tspan><tspan class="cls-1" x="169.46" y="0">es</tspan></text>
+</svg>
