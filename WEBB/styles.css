@@ -1,0 +1,952 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* SAMLAD TYPOGRAFI */
+
+h1 { /* Huvudrubriker */
+  color: white;
+  font-family: "bmx-radical", sans-serif;
+  font-style:normal;
+  font-size: 10vw;
+}
+
+h2 { /* Underrubriker eller undertext till huvudrubriker */
+  color: #bfa36f;
+  font-family: "carta-marina", sans-serif;
+  font-size: 4vw;
+  margin-left: 2vw;
+}
+
+h3 { /* Undertext eller andra underrubriker till de första underrubrikerna */
+  color: #912b28;
+  font-family: "carta-marina", sans-serif;
+  font-size: 3vw;
+  margin: 2vw;
+}
+
+h4 { /* Minirubriker så som våra namn */
+  color:#E5C53F;
+  font-family: "carta-marina", sans-serif;
+  font-size: 2vw;
+}
+
+p { /* Athelas typsnitt CSS */
+  text-align: left;
+  font-family: "athelas", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 2vw;
+  color: white;
+  }
+
+#merch_underrubrik { /* Underrubrik för merchsidan */
+  font-size: 3vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#merchpriser { /* Priser under merchprodukterna */
+  text-align: center;
+}
+
+#titlar { /* ID för jobbtitlar, kontaktsida */
+  font-size: 3vw;
+}
+
+#rad2 { /* ID för rad 2 för texten på dörren */
+  color: #E5C53F;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.filmtext { /* Stycke med text på filmsidan */
+  margin: 2vw;
+  margin-bottom: 3vh;
+}
+
+#startsida { /* Vit text på indexsidan */
+  text-align: center;
+}
+
+.underrubrik1 { /* Underrubrik för slottets sida */
+  grid-area: underrubrik1;
+  text-align: center;
+}
+
+
+/* Bakgrund och body */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+/* Gemensam Navigation */
+.nav {
+  background-color:#5c1c1b;
+  text-align: center;
+  position: sticky;
+  margin-bottom: 1%;
+  width: 100vw;
+  height: 5vh;
+  max-height: 8vh;
+  padding-bottom: 1%;
+  left: 0px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+
+ul li {
+  background-color: #5c1c1b;
+  text-decoration: none;
+  list-style: none;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+
+ul li a { /* Carta Marina typsnitt */
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "carta-marina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  padding-bottom: 7%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gemensam Footer */
+footer {
+  font-family: "carta-marina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: #5c1c1b;
+  text-align: center;
+  margin: none;
+  padding: 1vw 1vw;
+  position: relative;
+  width: 100vw;
+}
+
+.footer {
+  display: grid;
+  background-color: #5c1c1b;
+  padding: 1%;
+  padding-top: 2%;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+  'ikoner logga info'
+}
+
+.ikoner img { /* Class för facebook, instagram, mail */
+  grid-area: ikoner;
+  width: 8vh;
+  padding: 2vw;
+}
+
+.logga img { /* Class för loggan */
+  grid-area: logga;
+  width: 10vw;
+  align-self: center;
+  justify-self: center;
+  padding-left: 5vw;
+  padding-top: 2vh;
+}
+
+.info p { /* Class för infotexten i footer */
+  grid-area: info;
+  font-size: 2vw;
+}
+
+
+/* STARTSIDA */
+.index
+{
+  display: grid;
+}
+
+.container1 { /* Startsida */
+  display: grid;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: 
+  '. | . | . | .'
+  'main main main main'
+}
+
+.header {
+  text-align: center;
+  grid-area: header;
+  padding-bottom: 5%;
+}
+
+.container1 img { /* Bakgrundsbild dörr */
+  width: 70vw;
+  z-index: -1;
+  position: relative;
+  margin-bottom: -2%;
+  margin-top: -14%;
+}
+
+.premiär { /* Text på dörren */
+  z-index: 1;
+  position: absolute;
+  top: 37%;
+  text-align: center;
+  color: white;
+  font-family: "carta-marina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+
+/* RESTEN AV SIDORNA 2-5 */
+.restsidor {
+  display: grid;
+}
+
+.container2 { /* Om filmen */
+  display: grid;
+  width: 60%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  text-align: center;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  'header header'
+  'main main'
+}
+
+.container3 { /* Lofstad slott */
+  display: grid;
+  width: 60%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: 
+  'header header header header'
+  'underrubrik1 underrubrik1 underrubrik1 underrubrik1'
+  'axel1 axel1 axel1 axel1'
+  'axel2 axel2 axel2 axel2'
+  'hedvig hedvig hedvig hedvig'
+  'branden branden branden branden'
+  'brand brand brand brand'
+  'brand2 brand2 brand2 brand2'
+  'emilie emilie emilie emilie'
+  'underrubrik2 underrubrik2 underrubrik2 underrubrik2'
+  'cajsa cajsa cajsa cajsa'
+  'rum13 rum13 rum13 rum13'
+}
+
+.axel1 {
+  grid-area: axel1;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#slottbilder {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.bilder {
+  width: 70%;
+  margin-left: 14%;
+  border: 2px solid #5c1c1b;
+  border-radius: 5px;
+}
+
+.bilder img {
+  width: 100%;
+  height: 100%;
+}
+
+.axel2 {
+  grid-area: axel2;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.hedvig {
+  grid-area: hedvig;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.emilie {
+  grid-area: emilie;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.underrubrik2 {
+  grid-area: underrubrik2;
+}
+
+.cajsa {
+  grid-area: cajsa;
+  margin-right: 55%;
+  margin-left: 2%;
+}
+
+.cajsa img {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 2px solid #5c1c1b;
+  border-radius: 5px;
+}
+
+.rum13 {
+  grid-area: rum13;
+  margin-top: -27%;
+  margin-right: 2%;
+}
+
+#rubrik13 {
+  margin-left: 70%;
+  margin-top: -82%;
+}
+
+#fakta13 {
+  margin-left: 55%;
+  margin-top: -3%;
+}
+
+.brand {
+  grid-area: brand;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -13%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.brand img {
+  width: 45%;
+  height: 65%;
+  margin-top: 6%;
+  margin-left: 1%;
+  border: 2px solid #5c1c1b;
+  border-radius: 5px;
+}
+
+.brand2 {
+  grid-area: brand2;
+  margin-top: -5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.branden {
+  grid-area: branden;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#underrubriker, #fakta {
+margin-bottom: -2%;
+}
+
+#underrubrik2 {
+  margin-top: 10%;
+}
+
+.container4 { /* Merch */
+  display: grid;
+  width: 60%;
+  height: fit-content;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  'header header'
+  'bild1 bild2'
+  'bild3 bild4'
+}
+
+/* Grid-areas på Merch-sidan */
+.bild1 { /* Merch */
+  grid-area: bild1;
+  align-self: center;
+  justify-self: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.bild1 img {
+  width: 20vw;
+  border-radius: 10px;
+}
+
+.bild2 img {
+  width: 17vw;
+  border-radius: 10px;
+}
+
+.bild3 img {
+  width: 17vw;
+  border-radius: 10px;
+}
+
+.bild4 img {
+  width: 17vw;
+  border-radius: 10px;
+}
+
+.bild2 { /* Merch */
+  grid-area: bild2;
+  align-self: center;
+  justify-self: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.bild3 { /* Merch */
+  grid-area: bild3;
+  align-self: center;
+  justify-self: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.bild4 { /* Merch */
+  grid-area: bild4;
+  align-self: center;
+  justify-self: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+
+.container5 { /* Om oss */
+  display: grid;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 10%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  'header header'
+  'Anna_text Anna_bild'
+  'Emma_bild Emma_text'
+  'Alexandra_text Alexandra_bild'
+}
+
+/* Grid-areas på Kontakt-sidan */
+.Anna_bild img {
+  grid-area: Anna_bild;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.Emma_bild img {
+  grid-area: Emma_bild;
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.Alexandra_bild img {
+  grid-area: Alexandra_bild;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.Anna_text {
+  grid-area: Anna_text;
+  text-align: center;
+  margin-left: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.Emma_text {
+  grid-area: Emma_text;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+  margin-right: 10%;
+}
+
+.Alexandra_text {
+  grid-area: Alexandra_text;
+  text-align: center;
+  margin-left: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+/* FÖR STÖRRE SKÄRMAR, som dator och ipad */
+@media (min-width: 701px)
+{ 
+
+body {
+  max-width: 1200px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.dorrmobil {
+  display: none;
+}
+}
+
+/* MOBILANPASSAT */
+@media (max-width: 700px)
+{
+
+/* BODY och HTML MOBIL */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+/* SAMLAD TYPOGRAFI */
+#titlar { /* ID för jobbtitlar, kontaktsida */
+  font-size: 5vw;
+}
+
+#namntitel { /* ID för våra namn på Om oss-sidan */
+  font-size: 4vw;
+}
+
+.info p { /* Class för infotexten i footer */
+  grid-area: info;
+  font-size: 2vw;
+}
+
+h1 { /* Huvudrubriker */
+  color: white;
+  font-family: "bmx-radical", sans-serif;
+  font-style: normal;
+  font-size: 15vw;
+  margin: 2%;
+  margin-top: 5%;
+}
+
+h2 { /* Underrubriker */
+  color: #bfa36f;
+  font-family: "carta-marina", sans-serif;
+  font-size: 7vw;
+  margin-left: 5%;
+}
+
+h3 { /* Underrubriker eller undertext till första underrubriker */
+  color: #912b28;
+  font-family: "carta-marina", sans-serif;
+  font-size: 4vw;
+}
+
+#roda_titlar { /* ID för  */
+  font-size: 5vw;
+}
+
+#merch_underrubrik { /* ID för andra underrubrik för merchsidan */
+  font-size: 4vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h4 {
+  color:#E5C53F;
+  font-family: "carta-marina", sans-serif;
+  font-size: 3vw;
+}
+
+p { /* Athelas typsnitt CSS */
+  text-align: center;
+  font-family: "athelas", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 4vw;
+  color: white;
+  }
+
+  #underrubrik2 { /* ID för underrubrik till "Spöken på slottet", på slottsidan */
+    margin-bottom: -20%;
+    margin-top: 20%;
+    margin-left: 2vw;
+  }
+
+  #underrubriker { /* ID för resterande underrubriker på slottsidan */
+    font-size: 5vw;
+  }
+
+  #rubrik13 { /* ID för rubriken till texten om Rum 13, slottsidan */
+    font-size: 5vw;
+    margin-bottom: 5%;
+    margin-left: 2vw;
+  }
+
+  /* Övergripande container för indexsidan */
+.index {
+  background-image: url(door_telefon.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Övergripande container för resterande sidor 2-5 */
+.restsidor {
+  border-radius: 7px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* GEMENSAM NAVIGATION */
+.nav {
+  display: none;
+  border-radius: 5px;
+}
+
+.nav ul {
+  display: inline;
+  text-align: left;
+}
+
+.nav li {
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+.nav a {
+  font-size: 6vw;
+}
+
+.hamburger {
+  display: block;
+  font-size: 5vw;
+  cursor: pointer;
+  font-family: "carta-marina", sans-serif;
+  font-size: 7vw;
+  background-color: #5c1c1b;
+  color: white;
+  text-align: left;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+.hamburger:hover {
+  color: #bfa36f;
+}
+
+/* GEMENSAM HEADER */
+.header {
+  grid-area: header;
+}
+
+/* Innehålls-container till Om filmen-sidan */
+.container2 {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: auto auto;
+  grid-template-areas: 
+  'header header'
+  'main main'
+}
+
+
+/* Innehålls-container för Slottsidan */
+  .container3 {
+    display: grid;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+    'header header header header'
+    'underrubrik1 underrubrik1 underrubrik1 underrubrik1'
+    'axel1 axel1 axel1 axel1'
+    'axel2 axel2 axel2 axel2'
+    'hedvig hedvig hedvig hedvig'
+    'branden branden branden branden'
+    'brand brand brand brand'
+    'brand2 brand2 brand2 brand2'
+    'charles charles charles charles'
+    'emilie emilie emilie emilie'
+    'underrubrik2 underrubrik2 underrubrik2 underrubrik2'
+    'cajsa cajsa cajsa cajsa'
+    'rum13 rum13 rum13 rum13'
+  }
+
+  .cajsa {
+    margin-top: 10%;
+    margin-right: 0%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  #fakta13 {
+    margin-left: 0%;
+  }
+
+  #fakta {
+    margin-bottom: 0%;
+    margin-left: 1vw;
+  }
+
+  .container3 p {
+    padding-right: 4vw;
+  }
+
+  .brand img {
+    width: 45%;
+    height: 65%;
+    margin-top: 6%;
+    border: 2px solid #5c1c1b;
+    border-radius: 5px;
+  }
+
+  .brand2 {
+    margin-top: 0%;
+  }
+
+  .brand {
+    margin-bottom: 0%;
+  }
+
+  .rum13 {
+    margin-top: 70vh;
+    margin-left: 3vw;
+    margin-right: 1vw;
+  }
+
+
+/* CONTAINER 4 - Merch */
+.container4 {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  'header'
+  'bild1' 
+  'bild2'
+  'bild3'
+  'bild4'
+}
+
+/* Grid-areas på Merch-sidan */
+.bild1 {
+  grid-area: bild1;
+}
+
+.bild2 { 
+  grid-area: bild2;
+}
+
+.bild3 { 
+  grid-area: bild3;
+}
+
+.bild4 { 
+  grid-area: bild4;
+}
+
+/* Merch-bilder */
+.bild1 img {
+  border-radius: 10px;
+  width: 50vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.bild2 img {
+  border-radius: 10px;
+  width: 50vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.bild3 img {
+  border-radius: 10px;
+  width: 50vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.bild4 img {
+  border-radius: 10px;
+  width: 50vw;
+  align-self: center;
+  justify-self: center;
+}
+
+/* CONTAINER 5 - Om oss */
+.container5 {
+  display: grid;
+  width: 100%;
+  padding-bottom: 10%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  'header header'
+  'Anna_text Anna_bild'
+  'Emma_bild Emma_text'
+  'Alexandra_text Alexandra_bild'
+}
+
+/* Bilder på oss, på Om oss-sidan */
+.Anna_bild img {
+  grid-area: Anna_bild;
+  width: 80%;
+  margin-left: 20%;
+  margin-bottom: 10vh;
+}
+
+.Emma_bild img {
+  grid-area: Emma_bild;
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 20%;
+  margin-bottom: 10vh;
+}
+
+.Alexandra_bild img {
+  grid-area: Alexandra_bild;
+  width: 80%;
+  margin-left: 20%;
+  margin-bottom: 8vh;
+}
+
+/* Grid-areas på Om oss-sidan */
+.Anna_text {
+  grid-area: Anna_text;
+  text-align: center;
+  margin-left: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.Emma_text {
+  grid-area: Emma_text;
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.Alexandra_text {
+  grid-area: Alexandra_text;
+  text-align: center;
+  margin-left: 10%;
+  border: 1px solid #912b28;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+/* GEMENSAM FOOTER MOBIL */
+.footer {
+  display: grid;
+  background-color: #5c1c1b;
+  padding: 1%;
+  padding-top: 2%;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+  'ikoner logga info';
+}
+
+.ikoner img { /* Class för facebook, instagram, mail */
+  grid-area: ikoner;
+  width: 7vw; 
+}
+
+.ikoner {
+  padding: 0;
+}
+
+#ikoner img {
+  width: 9vw;
+  padding: 2vw;
+
+}
+
+.logga img { /* Class för loggan */
+  grid-area: logga;
+  width: 12vw;
+  margin-top: 2vh;
+  padding-left: 2vw;
+}
+
+.logga { /* Position av loggan */
+  display: block;
+}
+
+
+}

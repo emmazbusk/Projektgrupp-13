@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.57 112.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #922c28;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 126.34px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5.42" width="112.17" height="112.17" rx="16.9" ry="16.9"/>
+  <text class="cls-1" transform="translate(39.2 112.17)"><tspan x="0" y="0">f</tspan></text>
+</svg>
